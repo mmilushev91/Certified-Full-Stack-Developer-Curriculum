@@ -1,0 +1,183 @@
+<!-- All pages should begin with <!DOCTYPE html>. This special string is known as a declaration 
+ and ensures the browser tries to meet industry-wide specifications.
+<!DOCTYPE html> tells browsers that the document is an HTML5 document which is the latest version of HTML. -->
+
+<!DOCTYPE html>
+
+<!-- Notice that the entire contents of the page are nested within an html element.
+The html element is the root element of an HTML page and wraps all content on the page.
+You can also specify the language of your page by adding the lang attribute to the html element. -->
+
+<html lang="en">
+
+  <!-- The head element is used to contain metadata about the document, such as its title, 
+   links to stylesheets, and scripts. Metadata is information about the page that isn't displayed directly on 
+   the page. -->
+
+  <head>
+    
+
+    <!-- meta element with a charset attribute set to the value of utf-8. 
+    This tells the browser how to encode characters for the page.
+    Note that the meta element is a void element. -->
+
+    <meta charset="utf-8">
+    
+    <!-- The title element determines what browsers show in the title bar or tab for the page. -->
+     
+    <title>CatPhotoApp</title>
+  </head>
+
+  <!-- All page content elements that should be rendered to the page go inside the body element.  -->
+
+  <body>
+    
+    <!-- Commenting allows you to leave messages without 
+    affecting the browser display. It also allows you to make code inactive. 
+    A comment in HTML starts with '< !--', contains any number of lines of text, and ends with '-- >' -->
+
+    <!-- When element is inside another element. This is called nesting. Nested elements should be placed 
+    two spaces further to the right of the element they are nested in. This spacing is called 
+    indentation and it is used to make HTML easier to read. -->
+
+    <!-- HTML5 has some elements that identify different content areas. 
+    These elements make your HTML easier to read and help with Search Engine 
+    Optimization (SEO) and accessibility. -->
+
+    <!-- The main element is used to represent the main content of the body of an 
+    HTML document. Content inside the main element should be unique to the document and should not be repeated 
+    in other parts of the document. -->
+
+    <main>
+
+      <!-- The h1 element is a heading element and is used
+      for the main heading of a webpage. -->
+
+      <!-- The h1 through h6 heading elements are used to signify the importance of content below them.
+      The lower the number, the higher the importance, so h2 elements have less importance than h1 elements. -->
+
+      <!-- 
+      <h1>most important heading element</h1>
+      <h2>second most important heading element</h2>
+      <h3>third most important heading element</h3>
+      <h4>fourth most important heading element</h4>
+      <h5>fifth most important heading element</h5>
+      <h6>least important heading element</h6> -->
+
+      <!-- Only use one h1 element per page and 
+      place lower-importance headings below higher-importance headings. -->
+
+      <h1>CatPhotoApp</h1>
+
+      <!-- The section element is used to define sections in a document, such as chapters, headers, footers, or 
+       any other sections of the document. It is a semantic element that helps with SEO and accessibility. -->
+
+      <section> <!--First sections starts -->
+
+        <h2>Cat Photos</h2>
+
+      <!-- The p element is used to create a paragraph of text on websites. -->
+
+      <p>Everyone loves 
+        <a 
+          href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
+         online!</p>
+
+      <!-- You can link to another page with the anchor (a) element. -->
+      <!-- href attr specify destination url -->
+      <!-- Link text is put inside a element as content -->
+      <!-- To open links in a new tab, you can use the target attribute on the anchor (a) element.
+      The target attribute specifies where to open the linked document. target="_blank" 
+      opens the linked document in a new tab or window. -->
+
+      <p>See more 
+        <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+       in our gallery</p>
+
+      <!-- You can add images to your website by using the img element. img elements have an opening 
+      tag without a closing tag. An element without a closing tag is known as a void element. -->
+
+      <!-- HTML attributes are special words used inside the opening tag of an 
+      element to control the element's behavior. The src attribute in an 
+      img element specifies the image's URL (where the image is located). -->
+
+      <!-- All img elements should have an alt attribute. The alt attribute's text is used for screen 
+       readers to improve accessibility and is displayed if the image fails to load. -->
+       
+      <a href="https://freecatphotoapp.com">
+        <img
+        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        alt="A cute orange cat lying on its back"
+        />
+      </a>
+
+      </section> <!--First Section ends-->
+
+      <section> <!-- Second section starts-->
+        <h2>Cat Lists</h2>
+
+        <!-- When you add a lower-rank heading element to the page, it's implied that you're 
+         starting a new subsection.-->
+
+        <h3>Things cats love</h3>
+
+        <!-- To create an unordered list of items, you can use the ul element. -->
+
+        <ul>
+
+          <!-- The li element is used to create a list item in an ordered or unordered list. -->
+
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+
+        </ul>
+
+        <!-- The figure element represents self-contained content and will 
+         allow you to associate an image with a caption. -->
+
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate."/>
+
+          <!--A figure caption (figcaption) element is used to add a caption to describe the image 
+          contained within the figure element. -->
+
+          <!-- To place emphasis on a specific word or phrase, you can use the em element. -->
+
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+
+        <!-- The code for an ordered list (ol) is similar to an unordered list, 
+         but list items in an ordered list are numbered when displayed. -->
+
+         <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+
+        <figure>
+          <img 
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="Five cats looking around a field."/>
+
+          <!-- The strong element is used to indicate that some text is of strong importance or urgent. -->
+
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+
+      </section> <!--Second Section ends-->
+    
+    </body>
+
+    <!-- The footer element is used to define a footer for a document or section. 
+     A footer typically contains information about the author of the document, copyright data, 
+     links to terms of use, contact information, and more. -->
+
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</html>
