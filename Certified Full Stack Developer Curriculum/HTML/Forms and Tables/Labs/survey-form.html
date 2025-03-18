@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Marian' Survey Form</h1>
+    <p id="description">Welcome to Marian' Survey Form. Please fill all fields to help me improve your user experience</p>
+    <form id="survey-form" action="destination-url" method="POST">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <br/>
+      <br/>
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter Email" required>
+      <br/>
+      <br/>
+      <label id="number-label" for="number-label">Age (optional):</label>
+      <input type="number" id="number" placeholder="Age" min="18" max="110">
+      <br>
+      <br/>
+      <legend>Gender: </legend>
+      <br/>
+      <label for="female">Female
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="male">Male
+      <input type="radio" id="male" name="gender" value="male">
+     <br/>
+     <br/>
+      <legend>Your current occupation field: </legend>
+      <br/>
+      <select id="dropdown">
+        <option selected value="current-role">Current occupation field</option>
+        <option value="current-role">Services</option>
+        <option value="manufacturing">Manufacturing</option>
+        <option value="healthcare">Healthcare</option>
+        <option value="other">Other</option>
+      </select>
+      <br/>
+      <br/>
+      <legend>What to Improve?</legend>
+      <br/>
+      <label for="navigation">Website navigation</label>
+      <input type="checkbox" id="navigation" value="navigation">
+      <label for="new-categorries">Add new categorries</label>
+      <input type="checkbox" id="new-categorries" value="new-categorries">
+      <label for="interactivity">Add more interactivity</label>
+      <input type="checkbox" id="interactivity" value="interactivity">
+      <label for="daily posts">Add more daily posts</label>
+      <input type="checkbox" id="daily-posts" value="daily-posts">
+      <br/>
+      <br/>
+      <legend>Other comments or suggestions?</legend>
+      <br/>
+      <textarea rows="10" cols="30"></textarea>
+      <button id="submit" type="submit">Submit</submit>
+    </form>
+  </body>
+</html>
