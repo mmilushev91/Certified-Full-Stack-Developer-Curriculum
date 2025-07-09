@@ -30,6 +30,7 @@ function addProduct(product) {
 }
 
 function removeProduct(name, quantity) {
+  name = name.toLowerCase()
   const product = inventory.find(obj => obj.name === name);
 
   if (!product) {
@@ -43,5 +44,11 @@ function removeProduct(name, quantity) {
   else if (product.quantity === quantity) {
     inventory.splice(inventory.indexOf(product), 1);
 
+  } 
+  
+  else {
+    product.quantity -= quantity;
+    console.log(`Remaining ${name} pieces: ${product.quantity}`);
   }
 }
+
